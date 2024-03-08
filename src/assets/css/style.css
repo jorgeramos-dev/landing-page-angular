@@ -133,6 +133,10 @@ figure {
     position: relative;
 }
 
+.big-text {
+    font-size: 300px;
+}
+
 
 /* --------- 1.1 Input Elements ---------- */
 

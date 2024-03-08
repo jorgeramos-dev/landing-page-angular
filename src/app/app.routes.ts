@@ -6,16 +6,18 @@ import { HeaderComponent } from './components/header/header.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 export const routes: Routes = [
-    { path: '', component: HeaderComponent },
+    { path: '', title: 'Home', component: HeaderComponent },
     { path: 'home', component: HeaderComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'gallery', component: GalleryComponent },
-    { path: 'services', component: ServicesComponent },
-    { path: 'testimonial', component: TestimonialComponent },
-    { path: 'clients', component: ClientsComponent },
-    { path: 'pricing', component: PricingComponent },
+    { path: 'about', title: 'About', component: AboutComponent },
+    { path: 'gallery', title: 'Gallery', component: GalleryComponent },
+    { path: 'services', title: 'Services', component: ServicesComponent },
+    { path: 'testimonial', title: 'Testimonial', component: TestimonialComponent },
+    { path: 'clients', title: 'Clients', component: ClientsComponent },
+    { path: 'pricing', title: 'Pricing', component: PricingComponent },
+    { path: '**', title: 'Not Found', component: NotfoundComponent },
 
 
 ];
